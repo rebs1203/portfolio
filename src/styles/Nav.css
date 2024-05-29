@@ -1,0 +1,26 @@
+.navigation-row {
+    position:fixed;
+    bottom: 20%;
+    left: 42%;
+    transform: translateX(-50%);
+    margin-top: 10%;
+}
+
+.navigation-column {
+    display: flex;
+    flex-direction: column;
+    position:fixed;
+    bottom: 57%;
+    left: 95.5%;
+    transform: translateX(-50%);
+    margin-top: 10%;
+}
+
+.nav-icon {
+    margin-left: 3% !important;
+    margin-right: 3% !important;
+}
+
+.selected {
+    background-color: #99aa66 !important;
+}

@@ -1,0 +1,51 @@
+body {
+    background: linear-gradient(90deg, #fefae0 85%, #ccd5ae 85%); /* Left side gradient */
+}
+
+.parent-container {
+    display: flex;
+    margin-top: 7%;
+}
+
+
+.child-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-right: 15%;
+}
+
+.heading {
+    line-height: 0.1;
+    font-weight: 900;
+    font-size: 3em;
+}
+
+.text {
+    margin-left: 3%;
+    margin-right: 3%
+}
+
+@media screen and (max-width: 640px) {
+    .heading {
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .heading {
+        font-size: 2em;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .heading {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 315px) {
+    .heading {
+        font-size: 1em;
+    }
+}

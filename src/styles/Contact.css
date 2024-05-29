@@ -1,0 +1,48 @@
+.contact-parent-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.contact-child-container {
+    display: flex
+}
+
+.contact-heading {
+    font-weight: 750;
+    font-size: 4em;
+    margin-bottom: 0%;
+    margin-right: 19%;
+}
+
+.text-container {
+    text-align: left;
+    width: 30%;
+    margin-left: 5%;
+    margin-top: 3%;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column !important;
+    margin-left: 5%;
+    margin-top: 4%;
+    width: 35%
+}
+
+
+@media screen and (max-width: 640px) {
+    .contact-heading {
+        font-size: 2em;
+    }
+    .contact-child-container {
+        flex-direction: column;
+    }
+    .text-container {
+        width: 80%;
+    }
+    .form-container {
+        width: 75%;
+        margin-bottom: 10%;
+    }
+}

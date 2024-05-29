@@ -1,0 +1,43 @@
+.portfolio-parent-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.portfolio-child-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.portfolio-text {
+    width: 80%;
+    line-height: 2;
+    margin-bottom: 0%;
+    font-size: 1.2em;
+    margin-bottom: 2.5%;
+}
+
+.portfolio-heading {
+    font-weight: 750;
+    font-size: 4em;
+    margin-bottom: 0%;
+    margin-right: 19%;
+}
+
+.transition {
+    animation: createBox .5s;
+  }
+  @keyframes createBox {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+ @media screen and (max-width: 640px) {
+    .portfolio-heading {
+        font-size: 2em;
+    }
+}

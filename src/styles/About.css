@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.about-child-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.about-parent-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-text {
+    width: 80%;
+    line-height: 2;
+    margin-bottom: 0%;
+    margin-left: 1%;
+}
+
+.about-heading {
+    font-weight: 750;
+    font-size: 4em;
+    margin-bottom: 0%;
+    margin-right: 19%;
+}
+
+.heading-timeline {
+    font-weight: 600;
+    font-size: 2em;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    margin-right: 18%;
+}
+
+.timeline {
+    display: flex;
+}
+
+.timeline-right {
+    margin-right: 5%;
+    width: 50%;
+}
+
+.timeline-left {
+    margin-left: 5%;
+    width: 50%;
+}
+
+
+.css-1ms7hib-MuiTimelineItem-root::before {
+    content: none !important;
+}
+
+@media screen and (max-width: 640px) {
+    .about-heading {
+        font-size: 2em;
+    }
+    .about-text{
+        font-size: 0.5;
+        width: 70%;
+        margin-left: 4%;
+    }
+    .heading-timeline {
+        font-size: 1.5em;
+    }
+    .timeline{
+        flex-direction: column;
+    }
+    .timeline-left {
+        margin: 0%;
+        width: 100%;
+    }
+    .timeline-right {
+        margin: 0%;
+        width: 100%;
+    }
+}

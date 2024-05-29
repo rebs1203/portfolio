@@ -1,26 +1,37 @@
+import { useState } from 'react'
 import './App.css';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import NavBar from './components/NavBar.js';
-import HomeBanner from './components/HomeBanner.js'
+import Home from './components/Home.js'
 import About from './components/About.js';
-import Footer from './components/Footer.js';
+import Portfolio from './components/Portfolio';
+import Contact from './components/Contact';
 
 function App() {
+
+  const [iconNav, setIconNav] = useState('home')
+
   return (
     <div className="App">
       <BrowserRouter>
         <Routes>
           <Route path='/' element={
             <>
-              <NavBar />
-              <HomeBanner />
+              <Home iconNav={iconNav}/>
             </>
             }/>
             <Route path='/About' element={
               <>
-                <NavBar />
-                <About />
-                <Footer />
+                <About/>
+              </>
+            }/>
+            <Route path='/Portfolio' element={
+              <>
+                <Portfolio/>
+              </>
+            }/>
+            <Route path='/Contact' element={
+              <>
+                <Contact/>
               </>
             }/>
         </Routes>

@@ -48,7 +48,7 @@
 }
 
 
-.css-1ms7hib-MuiTimelineItem-root::before {
+.css-628fjv-MuiTimelineItem-root::before {
     content: none !important;
 }
 
@@ -75,7 +75,7 @@
         margin-right: 0%;
         width: 100%;
     }
-    .css-1ms7hib-MuiTimelineItem-root::before {
+    .css-628fjv-MuiTimelineItem-root::before {
         content: none !important;
     }
 }

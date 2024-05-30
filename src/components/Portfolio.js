@@ -15,7 +15,7 @@ import { useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 
 
-const Portfolio = () => {
+const Portfolio = ({mediaQuery}) => {
 
     const [hovered, setHovered] = useState(null)
     const navigate = useNavigate();
@@ -23,6 +23,26 @@ const Portfolio = () => {
     const handleNavigate = (path) => {
         navigate(path);
     };
+
+    const style1 = {
+        color: '#fefae0',
+        position: 'fixed',
+        bottom: '50%',
+        left: mediaQuery ? '89%' : '94.5%',
+        transform: 'translateX(-50)',
+        marginTop: '10%',
+        ':hover': { color: '#99aa66'}
+    }
+
+    const style2 = {
+        color: '#fefae0',
+        position: 'fixed',
+        bottom: '44%',
+        left: mediaQuery ? '89%' : '94.5%',
+        transform: 'translateX(-50)',
+        marginTop: '10%',
+        ':hover': { color: '#99aa66'}
+    }
 
     const urlObject = [
         {
@@ -128,8 +148,8 @@ const Portfolio = () => {
                 </div>
                 <Nav iconNav={'portfolio'} />
             </div>
-            <ArrowForwardIosIcon fontSize="large" sx={{ color: '#fefae0', position: 'fixed', bottom: '50%', left: '94.5%', transform: 'translateX(-50)', marginTop: '10%', ':hover': { color: '#99aa66' } }} onClick={() => { handleNavigate('/Contact') }} />
-            <ArrowBackIosNewIcon fontSize="large" sx={{ color: '#fefae0', position: 'fixed', bottom: '44%', left: '94.5%', transform: 'translateX(-50)', marginTop: '10%', ':hover': { color: '#99aa66' } }} onClick={() => { handleNavigate('/About') }} />
+            <ArrowForwardIosIcon fontSize="large" sx={style1} onClick={() => { handleNavigate('/Contact') }} />
+            <ArrowBackIosNewIcon fontSize="large" sx={style2} onClick={() => { handleNavigate('/About') }} />
         </div>
     )
 }

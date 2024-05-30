@@ -48,7 +48,7 @@
 }
 
 
-.css-628fjv-MuiTimelineItem-root::before {
+.css-628fjv::before {
     content: none !important;
 }
 
@@ -75,7 +75,7 @@
         margin-right: 0%;
         width: 100%;
     }
-    .css-628fjv-MuiTimelineItem-root::before {
+    .css-628fjv::before {
         content: none !important;
     }
 }

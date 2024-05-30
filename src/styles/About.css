@@ -75,4 +75,7 @@
         margin-right: 0%;
         width: 100%;
     }
+    .css-1ms7hib-MuiTimelineItem-root::before {
+        content: none !important;
+    }
 }

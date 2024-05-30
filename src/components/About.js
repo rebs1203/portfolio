@@ -16,13 +16,33 @@ import Nav from './Nav.js';
 
 
 
-const About = () => {
+const About = ( {mediaQuery} ) => {
 
     const navigate = useNavigate();
 
     const handleNavigate = (path) => {
         navigate(path);
     };
+
+    const style1 = {
+        color: '#fefae0',
+        position: 'fixed',
+        bottom: '50%',
+        left: mediaQuery ? '89%' : '94.5%',
+        transform: 'translateX(-50)',
+        marginTop: '10%',
+        ':hover': { color: '#99aa66'}
+    }
+
+    const style2 = {
+        color: '#fefae0',
+        position: 'fixed',
+        bottom: '44%',
+        left: mediaQuery ? '89%' : '94.5%',
+        transform: 'translateX(-50)',
+        marginTop: '10%',
+        ':hover': { color: '#99aa66'}
+    }
 
     return (
         <div className="about-parent-container">
@@ -139,8 +159,8 @@ const About = () => {
                     </div>
                 </div>
             </div>
-            <ArrowForwardIosIcon fontSize="large" sx={{ color: '#fefae0', position: 'fixed', bottom: '50%', left: '94.5%', transform: 'translateX(-50)', marginTop: '10%', ':hover': { color: '#99aa66'}}} onClick={() => {handleNavigate('/Portfolio')}}/>
-            <ArrowBackIosNewIcon fontSize="large" sx={{ color: '#fefae0', position: 'fixed', bottom: '44%', left: '94.5%', transform: 'translateX(-50)', marginTop: '10%', ':hover': { color: '#99aa66'}}} onClick={() => {handleNavigate('/')}}/>
+            <ArrowForwardIosIcon fontSize="large" sx={style1} onClick={() => {handleNavigate('/Portfolio')}}/>
+            <ArrowBackIosNewIcon fontSize="large" sx={style2} onClick={() => {handleNavigate('/')}}/>
         </div>
     )
 }

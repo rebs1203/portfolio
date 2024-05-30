@@ -16,13 +16,23 @@ import Fab from '@mui/material/Fab';
 import '../styles/Contact.css'
 import Nav from "./Nav";
 
-const Contact = () => {
+const Contact = ({mediaQuery}) => {
 
     const navigate = useNavigate();
 
     const handleNavigate = (path) => {
         navigate(path);
     };
+
+    const style1 = {
+        color: '#fefae0',
+        position: 'fixed',
+        bottom: '50%',
+        left: mediaQuery ? '89%' : '94.5%',
+        transform: 'translateX(-50)',
+        marginTop: '10%',
+        ':hover': { color: '#99aa66'}
+    }
 
     return (
         <div className="contact-parent-container">
@@ -147,7 +157,7 @@ const Contact = () => {
                         </Grid>
                     </form>
                 </div>
-                <ArrowBackIosNewIcon fontSize="large" sx={{ color: '#fefae0', position: 'fixed', bottom: '50%', left: '94.5%', transform: 'translateX(-50)', marginTop: '10%', ':hover': { color: '#99aa66'}}} onClick={() => {handleNavigate('/Portfolio')}}/>
+                <ArrowBackIosNewIcon fontSize="large" sx={style1} onClick={() => {handleNavigate('/Portfolio')}}/>
             </div>
             <Nav iconNav={'contact'} />
         </div>
